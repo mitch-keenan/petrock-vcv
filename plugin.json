@@ -12,5 +12,17 @@
   "sourceUrl": "",
   "donateUrl": "petrock.site",
   "changelogUrl": "",
-  "modules": []
+  "modules": [
+    {
+      "slug": "pet-rock",
+      "name": "pet-rock",
+      "description": "Pet Rock is a rogue-like rhythm generator which changes daily, with monthly modulations in style.",
+      "tags": [
+        "Sequencer",
+        "Random",
+        "Physical modeling",
+        "Hardware clone"
+      ]
+    }
+  ]
 }
