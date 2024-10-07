@@ -1,0 +1,21 @@
+{
+	"configurations": [
+		{
+			"name": "Mac",
+			"includePath": [
+				"${workspaceFolder}/**",
+				"/Users/mitch/vcv-rack-dev/Rack-SDK/include/**",
+				"/Users/mitch/vcv-rack-dev/Rack-SDK/dep/include/**"
+			],
+			"defines": ["PET_ROCK_DEV_MODE"],
+			"macFrameworkPath": [
+				"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+			],
+			"compilerPath": "/usr/bin/clang",
+			"cStandard": "c17",
+			"cppStandard": "c++17",
+			"intelliSenseMode": "macos-clang-arm64"
+		}
+	],
+	"version": 4
+}

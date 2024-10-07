@@ -2,9 +2,13 @@
 RACK_DIR ?= ../..
 
 # FLAGS will be passed to both the C and C++ compiler
-FLAGS +=
+FLAGS += 
 CFLAGS +=
 CXXFLAGS +=
+
+ifdef PET_ROCK_DEV_MODE
+CXXFLAGS += -DPET_ROCK_DEV_MODE
+endif
 
 # Careful about linking to shared libraries, since you can't assume much about the user's environment and library search path.
 # Static libraries are fine, but they should be added to this plugin's build system.
@@ -21,3 +25,9 @@ DISTRIBUTABLES += $(wildcard presets)
 
 # Include the Rack plugin Makefile framework
 include $(RACK_DIR)/plugin.mk
+
+# Run `make clean && PET_ROCK_DEV_MODE=true make dev` to build the plugin with the PET_ROCK_DEV_MODE flag set
+# Run `make clean && make dev` to build the plugin without the PET_ROCK_DEV_MODE flag set
+
+.PHONY: dev
+dev: all install

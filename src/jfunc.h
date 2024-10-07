@@ -8,11 +8,9 @@
 
 #define round(x)     ((x)>=0?(long)((x)+0.5):(long)((x)-0.5))
 
-long random(long);
-long random(long, long);
+long jrandom(long);
+long jrandom(long, long);
 
-void randomSeed(long);
-
-long map(long, long, long, long, long);
+long jmap(long, long, long, long, long);
 
 #endif
