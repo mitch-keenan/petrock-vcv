@@ -41,3 +41,7 @@ If you liked this VCV rack implementation and want to support me making more mod
 ## "Please, please let me change things!"
 
 Fine... but it won't be fun... you'll need to build from source with `PET_ROCK_DEV_MODE=true` in your environment. Once built/installed right clicking on the module will let you manually various override parameters.
+
+## License
+
+This repo is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/). For full details see [LICENSE.txt](./LICENSE.txt)
