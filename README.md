@@ -32,7 +32,7 @@ The software version works exactly the same as the manual states, **including fi
 
 ### Pet Rock Hardware & Jonah Senzel
 
-If you like the module and want to buy a hardware version, or send support to the creator check out [Pet Rock on synthCute](https://synthcube.com/cart/petrock)!
+If you like the module and want to buy a hardware version, or send support to the creator check out [Pet Rock on synthCube](https://synthcube.com/cart/petrock)!
 
 ### VCV Adaptation & Mitch
 
@@ -40,7 +40,9 @@ If you liked this VCV rack implementation and want to support me making more mod
 
 ## "Please, please let me change things!"
 
-Fine... but it won't be fun... you'll need to build from source with `PET_ROCK_DEV_MODE=true` in your environment. Once built/installed right clicking on the module will let you manually various override parameters.
+Fine... Pet Rock uses the system time for it's internal clock. Changing the date on your host system will also change what day Pet Rock thinks it is.
+
+Alternatively you can build from source with `PET_ROCK_DEV_MODE=true` in your environment. Once built/installed, right clicking on the module will let you manually various override parameters.
 
 ## License
 

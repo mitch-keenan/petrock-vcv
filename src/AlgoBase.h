@@ -19,6 +19,8 @@ protected:
 	float resetDur = 0.2f;
 	float gateThreshold = 0.1f;
 
+	float gateHighVoltage = 8.f;
+
 	// since algos are essential gate skippers, this tracks whether the currently
 	// active gate has been handled or not
 	bool isGateHandled = false;
@@ -50,9 +52,9 @@ protected:
 		statusLight->setBrightness(isGatePlaying && !isResetLightOn ? 1.f : 0.f);
 	}
 
-	void updateOutput(float voltageIn)
+	void updateOutput(const rack::Module::ProcessArgs &args)
 	{
-		out->setVoltage(isGatePlaying ? voltageIn : 0.f);
+		out->setVoltage(isGatePlaying ? gateHighVoltage : 0.f);
 	}
 
 public:
@@ -96,7 +98,7 @@ public:
 			isGateHandled = false;
 			isGatePlaying = false;
 		}
-		updateOutput(inRead);
+		updateOutput(args);
 		updateLights(args);
 	};
 };
