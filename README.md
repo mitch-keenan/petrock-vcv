@@ -6,7 +6,15 @@ This is an implementation of [Jonah Senzel's Pet Rock](https://petrock.site/) mo
 
 Most code, imagery, etc. is heavily based on, or directly copied from Jonah's [original open source Pet Rock repository](https://github.com/jsenzel1/petrock/tree/main?tab=readme-ov-file#pet-rock-eurorack-module)!
 
-## On Choice
+## Manual
+
+For info on how Pet Rock works and the ideas it represents check out [petrock.site](https://petrock.site/) and the [manual in the original pet-rock repo](https://github.com/jsenzel1/petrock/blob/main/MANUAL%201.0.pdf).
+
+The software version works exactly the same as the manual states, **including fixed 8V outputs**.
+
+## On Choice & Change
+
+Like the hardware version, Pet Rock's VCV clone doesn't have options, buttons, or menus, and there is no easy way to change the internal date.
 
 > Why did I design the module to limit choice? When choice is
 > endless and vast, oddly enough we start to make the same choices
@@ -20,13 +28,27 @@ Most code, imagery, etc. is heavily based on, or directly copied from Jonah's [o
 >
 > – Jonah Senzel, Pet Rock Field Manual V1.0
 
-In the spirit of Jonah's intention for Pet Rock, the VCV clone doesn't have options, buttons, or context menus, and there is no way to change the internal date.
 
-## Manual
+### "So I can't hear my patch from yesterday?"
 
-For info on how the pet rock works check out [petrock.site](https://petrock.site/) or the [manual in the original pet-rock repo](https://github.com/jsenzel1/petrock/blob/main/MANUAL%201.0.pdf).
+You can, but it's changed... 
 
-The software version works exactly the same as the manual states, **including fixed 8V outputs**.
+> It frustrates me that devices turn off. It spoils the illusion that
+> they're real. There's a forest behind my parent's house and a
+> thicket of thorns. When I leave it and return things change,
+> things have grown, and died. When I turn on my synthesizer it performs
+> exactly as it did when I last used it, frozen perfectly in time, switched off. I
+> want the synthesizer to show that it still lives when out of my line of sight
+> I want it to have object permanence. That way it will be real. Then I can
+> come to it, and wake it up, instead of turning it on, and ask it what it has
+> to give me. It will serve me what it wants. It will act differently than it did
+> before. The living device allows me to see past the turning of knobs, the
+> idea that I have ultimate control. It speaks and I listen, and it has moods,
+> and phases. Devices need not be static, they can have lives of their own,
+> changing with the passage of time, sitting in a drawer and thinking,
+> acting differently when taken out.
+> 
+> – Jonah Senzel, Pet Rock Field Manual V1.0
 
 ## Support the Creators
 
@@ -38,11 +60,7 @@ If you like the module and want to buy a hardware version, or send support to th
 
 If you liked this VCV rack implementation and want to support me making more modular stuff [send me a coffee here](https://paypal.me/mitchkeenan)
 
-## "Please, please let me change things!"
 
-Fine... Pet Rock uses the system time for it's internal clock. Changing the date on your host system will also change what day Pet Rock thinks it is.
-
-Alternatively you can build from source with `PET_ROCK_DEV_MODE=true` in your environment. Once built/installed, right clicking on the module will let you manually various override parameters.
 
 ## License
 
