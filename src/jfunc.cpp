@@ -7,7 +7,11 @@ long jrandom(long howbig)
   {
     return 0;
   }
+#ifdef ARCH_WIN
+  return rand() % howbig;
+#else
   return arc4random() % howbig;
+#endif
 }
 
 long jrandom(long howsmall, long howbig)
