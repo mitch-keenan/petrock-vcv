@@ -6,7 +6,7 @@ class Clock
 public:
   void readClock()
   {
-    long unixTime = (long)rack::system::getUnixTime();
+    time_t unixTime = (time_t)rack::system::getUnixTime();
 
     // extract the time from the unix time
     struct tm *timeinfo = std::localtime(&unixTime);
