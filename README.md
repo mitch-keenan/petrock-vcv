@@ -56,12 +56,6 @@ You can, but it's changed...
 
 If you like the module and want to buy a hardware version, or send support to the creator check out [Pet Rock on synthCube](https://synthcube.com/cart/petrock)!
 
-### VCV Adaptation & Mitch
-
-If you liked this VCV rack implementation and want to support me making more modular stuff [send me a coffee here](https://paypal.me/mitchkeenan)
-
-
-
 ## License
 
 This repo is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/). For full details see [LICENSE.txt](./LICENSE.txt)
